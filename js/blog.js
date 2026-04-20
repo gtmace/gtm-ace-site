@@ -26,7 +26,7 @@ async function renderBlogList(id) {
       <div style="background:#fff; padding:25px; border-radius:12px; margin-bottom:20px; border:1px solid #E5EAF2;">
         <h2 style="margin-bottom:10px;">${p.title}</h2>
         <p style="color:#555;">${p.description || ""}</p>
-        <a href="/blog/${p.slug}" style="color:#1A6FD4; font-weight:600; text-decoration:none;">
+        <a href="/blog/post.html?slug=${p.slug}" style="color:#1A6FD4; font-weight:600; text-decoration:none;">
           Read →
         </a>
       </div>
