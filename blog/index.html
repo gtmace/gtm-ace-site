@@ -1,2 +1,26 @@
-<h1>Test Blog</h1>
-<a href="/blog/post.html?slug=sample">Test Post</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | GTM Ace</title>
+
+<style>
+body {font-family: Arial; background:#F5F7FA; margin:0;}
+.container {max-width:900px; margin:auto; padding:40px 20px;}
+.post {background:#fff; padding:20px; margin-bottom:20px; border-radius:10px;}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h1>Blog</h1>
+<div id="blog-list"></div>
+</div>
+
+<script src="/js/blog.js"></script>
+<script>
+renderBlogList("blog-list");
+</script>
+</body>
+</html>
