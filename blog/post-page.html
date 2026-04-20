@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title id="meta-title">Blog Post</title>
-
+<meta name="description" id="meta-desc">
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
@@ -46,16 +46,21 @@ h1 {
   text-decoration: none;
   font-weight: 600;
 }
+
+#content p {
+  margin-bottom: 16px;
+}
 </style>
 </head>
 
 <body>
 
 <div class="container">
-
+  <a href="/" style="text-decoration:none; color:#1A6FD4; font-weight:500;">← Back to Home</a>
+  
   <!-- ✅ REQUIRED FOR JS -->
   <h1 id="title"></h1>
-  <div id="content"></div>
+  <div id="content" style="line-height:1.8; font-size:18px; margin-top:20px;"></div>
 
   <!-- CTA -->
   <div class="cta">
