@@ -27,18 +27,20 @@ async function renderBlogList(id){
   });
 }
 
-async function renderPost(){
-  const params = new URLSearchParams(window.location.search);
-  const slug = params.get("slug");
+function renderPost(){
+  const slug = window.location.pathname.split('/blog/')[1];
 
-  const posts = await fetchPosts();
-  const post = posts.find(p => p.slug === slug);
+  fetch('/content/blog/index.json')
+    .then(res => res.json())
+    .then(posts => {
+      const post = posts.find(p => p.slug === slug);
 
-  if (!post) {
-    document.body.innerHTML = "<h2>Post not found</h2>";
-    return;
-  }
+      if (!post) {
+        document.body.innerHTML = "<h2>Post not found</h2>";
+        return;
+      }
 
-  document.getElementById('title').innerText = post.title;
-  document.getElementById('content').innerHTML = post.body || "";
+      document.getElementById('title').innerText = post.title;
+      document.getElementById('content').innerHTML = post.body || "";
+    });
 }
