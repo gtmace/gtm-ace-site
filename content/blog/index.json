@@ -3,6 +3,7 @@
     "slug": "sample",
     "title": "Sample Post",
     "date": "2026-01-01",
-    "description": "This is a sample blog post"
+    "description": "Test"
+    "body": "This is a sample blog post."
   }
 ]
