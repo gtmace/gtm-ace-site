@@ -61,6 +61,12 @@ async function renderPost() {
 
     document.getElementById('title').innerText = post.title;
     document.getElementById('content').innerHTML = post.body || "";
+    document.title = post.title + " | GTM Ace";
+
+    const meta = document.getElementById("meta-desc");
+if (meta && post.description) {
+  meta.setAttribute("content", post.description);
+}
 
   } catch (err) {
     console.error("BLOG ERROR:", err);
