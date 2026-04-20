@@ -1,1 +1,7 @@
-{"slug":"sample","title":"Sample Post","date":"2026-01-01","description":"Test","body":"<p>Content</p>"}
+{
+  "slug": "sample",
+  "title": "Sample Post",
+  "date": "2026-01-01",
+  "description": "This is a sample blog post",
+  "body": "<p>Your content here</p>"
+}
