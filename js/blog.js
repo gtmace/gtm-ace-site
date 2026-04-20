@@ -39,14 +39,31 @@ async function renderPost() {
   const params = new URLSearchParams(window.location.search);
   const slug = params.get("slug");
 
+  // 🔒 Guard clause (critical)
+  if (!slug) {
+    document.body.innerHTML = "<h2>Invalid post URL</h2>";
+    return;
+  }
+
   try {
     const res = await fetch(`/content/blog/${slug}.json`);
+
+    if (!res.ok) {
+      throw new Error("Post file not found");
+    }
+
     const post = await res.json();
+
+    // 🔒 Validate content
+    if (!post || !post.title) {
+      throw new Error("Invalid post data");
+    }
 
     document.getElementById('title').innerText = post.title;
     document.getElementById('content').innerHTML = post.body || "";
 
   } catch (err) {
+    console.error("BLOG ERROR:", err);
     document.body.innerHTML = "<h2>Post not found</h2>";
   }
 }
