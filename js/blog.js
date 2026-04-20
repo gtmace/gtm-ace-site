@@ -22,7 +22,7 @@ async function renderBlogList(id){
       <div style="margin-bottom:20px;">
         <h2>${p.title}</h2>
         <p>${p.description}</p>
-        <a href="/blog/post.html?slug=${p.slug}">Read →</a>
+        <a href="/blog/${p.slug}">Read Blog→</a>
       </div>`;
   });
 }
