@@ -36,22 +36,17 @@ async function renderBlogList(id) {
 
 // Render individual post
 async function renderPost() {
-  const slug = window.location.pathname.split('/blog/')[1];
+  const params = new URLSearchParams(window.location.search);
+  const slug = params.get("slug");
 
-  const posts = await fetchPosts();
-  const post = posts.find(p => p.slug === slug);
+  try {
+    const res = await fetch(`/content/blog/${slug}.json`);
+    const post = await res.json();
 
-  if (!post) {
+    document.getElementById('title').innerText = post.title;
+    document.getElementById('content').innerHTML = post.body || "";
+
+  } catch (err) {
     document.body.innerHTML = "<h2>Post not found</h2>";
-    return;
-  }
-
-  document.getElementById('title').innerText = post.title;
-  document.getElementById('content').innerHTML = post.body || "";
-
-  // SEO meta description
-  const metaDesc = document.getElementById('meta-desc');
-  if (metaDesc && post.description) {
-    metaDesc.setAttribute('content', post.description);
   }
 }
