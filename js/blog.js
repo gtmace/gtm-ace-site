@@ -1,14 +1,16 @@
-async function fetchPosts(){
+async function fetchPosts() {
   try {
     const res = await fetch('/content/blog/index.json');
+    if (!res.ok) throw new Error('Failed to fetch posts');
     return await res.json();
-  } catch (e) {
-    console.error("Blog fetch failed:", e);
+  } catch (err) {
+    console.error('Error loading posts:', err);
     return [];
   }
 }
 
-async function renderBlogList(id){
+// Render blog list
+async function renderBlogList(id) {
   const posts = await fetchPosts();
   const el = document.getElementById(id);
 
@@ -17,30 +19,39 @@ async function renderBlogList(id){
     return;
   }
 
-  posts.forEach(p=>{
+  el.innerHTML = "";
+
+  posts.forEach(p => {
     el.innerHTML += `
-      <div style="margin-bottom:20px;">
-        <h2>${p.title}</h2>
-        <p>${p.description}</p>
-        <a href="/blog/${p.slug}">Read Blog→</a>
-      </div>`;
+      <div style="background:#fff; padding:25px; border-radius:12px; margin-bottom:20px; border:1px solid #E5EAF2;">
+        <h2 style="margin-bottom:10px;">${p.title}</h2>
+        <p style="color:#555;">${p.description || ""}</p>
+        <a href="/blog/${p.slug}" style="color:#1A6FD4; font-weight:600; text-decoration:none;">
+          Read →
+        </a>
+      </div>
+    `;
   });
 }
 
-function renderPost(){
+// Render individual post
+async function renderPost() {
   const slug = window.location.pathname.split('/blog/')[1];
 
-  fetch('/content/blog/index.json')
-    .then(res => res.json())
-    .then(posts => {
-      const post = posts.find(p => p.slug === slug);
+  const posts = await fetchPosts();
+  const post = posts.find(p => p.slug === slug);
 
-      if (!post) {
-        document.body.innerHTML = "<h2>Post not found</h2>";
-        return;
-      }
+  if (!post) {
+    document.body.innerHTML = "<h2>Post not found</h2>";
+    return;
+  }
 
-      document.getElementById('title').innerText = post.title;
-      document.getElementById('content').innerHTML = post.body || "";
-    });
+  document.getElementById('title').innerText = post.title;
+  document.getElementById('content').innerHTML = post.body || "";
+
+  // SEO meta description
+  const metaDesc = document.getElementById('meta-desc');
+  if (metaDesc && post.description) {
+    metaDesc.setAttribute('content', post.description);
+  }
 }
