@@ -1,78 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title id="meta-title"></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sample Blog | GTM Ace</title>
 
-  <!-- SEO -->
-  <meta name="description" id="meta-desc">
-  <link rel="canonical" href="https://www.gtmace.com/blog/sample">
+<!-- SAME FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0B1929;
+  --gray-100: #EEF1F6;
+  --gray-200: #D8DDE8;
+  --text: #0B1929;
+  --text-muted: #4A5568;
+  --white: #FFFFFF;
+  --radius: 12px;
+  --radius-sm: 8px;
+}
 
-  <style>
-    body {
-      font-family: 'Figtree', sans-serif;
-      margin: 0;
-      background: #fff;
-      color: #0B1929;
-    }
+body {
+  font-family: 'Figtree', sans-serif;
+  margin: 0;
+  background: var(--white);
+  color: var(--text);
+  line-height: 1.7;
+}
 
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 40px 20px;
-    }
+/* NAV */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1.1rem 3rem;
+  background: rgba(255,255,255,0.95);
+  border-bottom: 1px solid var(--gray-200);
+}
+.nav-logo { font-size: 20px; font-weight: 700; }
+.nav-links { display: flex; gap: 2rem; align-items: center; }
+.nav-links a {
+  font-size: 15px;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.nav-cta {
+  background: #1E3A5F;
+  color: #fff !important;
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+}
 
-    h1 {
-      font-size: 32px;
-    }
+/* BLOG CONTENT */
+.blog-container {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
 
-    #content {
-      line-height: 1.8;
-      font-size: 18px;
-      margin-top: 20px;
-    }
+.blog-container h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
 
-    .cta {
-      margin-top: 60px;
-      padding: 30px;
-      background: #0B1929;
-      color: white;
-      border-radius: 12px;
-      text-align: center;
-    }
+.blog-meta {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 30px;
+}
 
-    .cta a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 12px 24px;
-      background: white;
-      color: #0B1929;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-  </style>
+.blog-container p {
+  font-size: 18px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.blog-container h2 {
+  font-size: 26px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.blog-container a {
+  color: #1A6FD4;
+  text-decoration: none;
+}
+
+.blog-container a:hover {
+  text-decoration: underline;
+}
+
+/* CTA */
+.blog-cta {
+  margin-top: 60px;
+  padding: 30px;
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.blog-cta h3 {
+  margin-bottom: 10px;
+}
+
+.blog-cta a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 24px;
+  background: #0B1929;
+  color: #fff;
+  border-radius: var(--radius-sm);
+}
+
+/* FOOTER */
+footer {
+  padding: 2rem;
+  text-align: center;
+  font-size: 13px;
+  color: #8A93A6;
+  border-top: 1px solid var(--gray-100);
+  margin-top: 60px;
+}
+</style>
 </head>
 
 <body>
 
-<div class="container">
-  <a href="/blog" style="text-decoration:none; color:#1A6FD4; font-weight:500;">← Back to Home</a>
-  <h1 id="title"></h1>
-  <div id="content"></div>
-
-  <div class="cta">
-    <h2>Want your Marketing efforts to generate ROI in 90 days?</h2>
-    <a href="https://calendly.com/rahul-gtmace/30min">Book a free call</a>
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">GTM Ace</div>
+  <div class="nav-links">
+    <a href="/#services">Services</a>
+    <a href="/#about">About</a>
+    <a href="/#contact">Contact</a>
+    <a href="https://calendly.com/rahul-gtmace/30min" target="_blank" class="nav-cta">Book a free call</a>
   </div>
+</nav>
+
+<!-- BLOG -->
+<div class="blog-container">
+
+  <h1>Sample Blog Title</h1>
+
+  <div class="blog-meta">
+    April 2026 · 5 min read
+  </div>
+
+  <p>This is your introduction paragraph. Keep it sharp and valuable.</p>
+
+  <h2>First Section</h2>
+  <p>Explain your idea clearly. Write like you're advising a founder.</p>
+
+  <h2>Second Section</h2>
+  <p>Add insights, frameworks, or examples.</p>
+
+  <p>Close with a strong takeaway.</p>
+
+  <!-- CTA -->
+  <div class="blog-cta">
+    <h3>Need help building your GTM engine?</h3>
+    <p>Book a free strategy call and let's fix your funnel.</p>
+    <a href="https://calendly.com/rahul-gtmace/30min" target="_blank">Book a Call</a>
+  </div>
+
 </div>
 
-<script src="/js/blog.js"></script>
-<script>
-renderPost();
-</script>
+<!-- FOOTER -->
+<footer>
+  GTM Ace · Rahul Sawant · Mumbai
+</footer>
 
 </body>
 </html>
