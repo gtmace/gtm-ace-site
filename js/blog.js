@@ -36,17 +36,17 @@ async function renderBlogList(id) {
 async function renderPost() {
   let slug;
 
-  // 1. Try query param
-  const params = new URLSearchParams(window.location.search);
-  slug = params.get("slug");
+// 1. Try query param
+const params = new URLSearchParams(window.location.search);
+slug = params.get("slug");
 
-  // 2. Fallback to clean URL
-  if (!slug) {
-    const pathParts = window.location.pathname.split("/blog/");
-    slug = pathParts[1];
-  }
+// 2. Fallback to clean URL
+if (!slug) {
+  const pathParts = window.location.pathname.split("/blog/");
+  slug = pathParts[1]?.replace(/\/$/, "");
+}
 
-  console.log("Slug:", slug);
+console.log("Slug:", slug);
 
   // 🔒 Guard clause
   if (!slug) {
