@@ -26,7 +26,7 @@ async function renderBlogList(id) {
       <div style="background:#fff; padding:25px; border-radius:12px; margin-bottom:20px; border:1px solid #E5EAF2;">
         <h2 style="margin-bottom:10px;">${p.title}</h2>
         <p style="color:#555;">${p.description}</p>
-        <a href="/blog/post-page.html?slug=${p.slug}" style="color:#1A6FD4; font-weight:600;">Read →</a>
+        <a href="/blog/${p.slug}" style="color:#1A6FD4; font-weight:600;">Read →</a>
       </div>
     `;
   });
@@ -34,8 +34,13 @@ async function renderBlogList(id) {
 
 // Render individual post
 async function renderPost() {
-  const params = new URLSearchParams(window.location.search);
-  const slug = params.get("slug");
+  let slug = window.location.pathname.split("/blog/")[1];
+
+  // fallback for old URLs
+  if (!slug) {
+    const params = new URLSearchParams(window.location.search);
+    slug = params.get("slug");
+  }
 
   // 🔒 Guard clause (critical)
   if (!slug) {
