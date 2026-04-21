@@ -34,14 +34,19 @@ async function renderBlogList(id) {
 
 // Render individual post
 async function renderPost() {
-  let slug = window.location.pathname.split("/blog/")[1];
+  let slug;
 
-  // fallback for old URLs
-  if (!slug) {
-    const params = new URLSearchParams(window.location.search);
-    slug = params.get("slug");
-  }
+// 1. First try query param (correct for your system)
+const params = new URLSearchParams(window.location.search);
+slug = params.get("slug");
 
+// 2. Fallback to clean URL (if no query param)
+if (!slug) {
+  const pathParts = window.location.pathname.split("/blog/");
+  slug = pathParts[1];
+}
+
+console.log("Slug:", slug); // debug
   // 🔒 Guard clause (critical)
   if (!slug) {
     document.body.innerHTML = "<h2>Invalid post URL</h2>";
