@@ -53,6 +53,28 @@ nav {
   text-decoration: none;
 }
 
+/* Blog Image */
+.blog-image {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--gray-100);
+}
+
+.blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Optional: fixed aspect ratio for consistency */
+.blog-image.aspect-16-9 {
+  aspect-ratio: 16 / 9;
+}
+  
 /* BLOG CONTENT */
 .blog-container {
   max-width: 800px;
@@ -143,6 +165,11 @@ footer {
 <!-- BLOG -->
 <div class="blog-container">
 
+  <!-- ✅ ADD IMAGE HERE -->
+  <div class="blog-image aspect-16-9">
+    <img src="/images/sample-blog.jpg" alt="Blog featured image">
+  </div>
+  
   <h1>Sample Blog Title</h1>
 
   <div class="blog-meta">
