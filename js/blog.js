@@ -86,10 +86,6 @@ async function renderPost() {
       canonical.setAttribute("href", `https://www.gtmace.com/blog/${slug}`);
     }
 
-    // ✅ Clean URL in browser (remove ?slug=)
-    if (window.location.search.includes("slug")) {
-      window.history.replaceState({}, "", `/blog/${slug}`);
-    }
 
   } catch (err) {
     console.error("BLOG ERROR:", err);
