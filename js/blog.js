@@ -36,18 +36,19 @@ async function renderBlogList(id) {
 async function renderPost() {
   let slug;
 
-// 1. First try query param (correct for your system)
-const params = new URLSearchParams(window.location.search);
-slug = params.get("slug");
+  // 1. Try query param
+  const params = new URLSearchParams(window.location.search);
+  slug = params.get("slug");
 
-// 2. Fallback to clean URL (if no query param)
-if (!slug) {
-  const pathParts = window.location.pathname.split("/blog/");
-  slug = pathParts[1];
-}
+  // 2. Fallback to clean URL
+  if (!slug) {
+    const pathParts = window.location.pathname.split("/blog/");
+    slug = pathParts[1];
+  }
 
-console.log("Slug:", slug); // debug
-  // 🔒 Guard clause (critical)
+  console.log("Slug:", slug);
+
+  // 🔒 Guard clause
   if (!slug) {
     document.body.innerHTML = "<h2>Invalid post URL</h2>";
     return;
@@ -62,19 +63,33 @@ console.log("Slug:", slug); // debug
 
     const post = await res.json();
 
-    // 🔒 Validate content
     if (!post || !post.title) {
       throw new Error("Invalid post data");
     }
 
+    // ✅ Render content
     document.getElementById('title').innerText = post.title;
     document.getElementById('content').innerHTML = post.body || "";
+
+    // ✅ SEO: Title
     document.title = post.title + " | GTM Ace";
 
+    // ✅ SEO: Meta description
     const meta = document.getElementById("meta-desc");
-if (meta && post.description) {
-  meta.setAttribute("content", post.description);
-}
+    if (meta && post.description) {
+      meta.setAttribute("content", post.description);
+    }
+
+    // ✅ SEO: Canonical URL
+    const canonical = document.getElementById("canonical-url");
+    if (canonical && slug) {
+      canonical.setAttribute("href", `https://www.gtmace.com/blog/${slug}`);
+    }
+
+    // ✅ Clean URL in browser (remove ?slug=)
+    if (window.location.search.includes("slug")) {
+      window.history.replaceState({}, "", `/blog/${slug}`);
+    }
 
   } catch (err) {
     console.error("BLOG ERROR:", err);
