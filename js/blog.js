@@ -55,7 +55,7 @@ async function renderPost() {
   }
 
   try {
-    const res = await fetch(`/content/blog/${slug}.json`);
+    const res = await fetch(`${window.location.origin}/content/blog/${slug}.json`);
 
     if (!res.ok) {
       throw new Error("Post file not found");
