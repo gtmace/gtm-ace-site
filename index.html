@@ -601,7 +601,7 @@ Or reach out to me on rahul(@)gtmace(dot)com
 </footer>
 
 
-<script src="/js/blog.js"></script>
+<!-- <script src="/js/blog.js"></script> -->
 <script>
 async function renderBlogPreview(id, limit){
  const res = await fetch('/content/blog/');
@@ -615,7 +615,7 @@ async function renderBlogPreview(id, limit){
   el.innerHTML+=`<div style="margin-bottom:20px;"><h3>${p.title}</h3><p>${p.description||''}</p><a href="/blog/${p.slug}">Read →</a></div>`;
  });
 }
-renderBlogPreview("blog-preview",3);
+<!-- renderBlogPreview("blog-preview",3); -->
 </script>
 </body>
 </html>
