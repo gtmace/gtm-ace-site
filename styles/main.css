@@ -612,6 +612,22 @@ nav {
   text-align: center;
 }
 
+.blog-title {
+  margin-bottom: 40px;
+}
+
+.featured-label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1A6FD4;
+  background: rgba(26, 111, 212, 0.08);
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
 .featured-post {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
