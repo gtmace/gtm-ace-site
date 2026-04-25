@@ -657,8 +657,10 @@ nav {
 a:hover img {
   opacity: 0.9;
 }
-
 a h2:hover {
+  text-decoration: underline;
+}
+a h3:hover {
   text-decoration: underline;
 }
 
