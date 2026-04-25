@@ -654,6 +654,13 @@ nav {
   text-decoration: none;
 }
 
+a:hover img {
+  opacity: 0.9;
+}
+
+a h2:hover {
+  text-decoration: underline;
+}
 
 /* =========================
    FOOTER
