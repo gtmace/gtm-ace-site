@@ -1,264 +1,210 @@
-/* =========================
-   RESET + GLOBAL
-========================= */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fractional CMO &amp; SaaS Marketing Consultant – Rahul Sawant</title>
+<meta property="og:title" content="Fractional CMO &amp; SaaS Marketing Consultant – Rahul Sawant">
+<meta property="og:description" content="Fractional CMO & Marketing Consultant for B2B startups & SaaS in India. Build your sales funnel and GTM engine in 90 days — without hiring a full-time CMO. Mumbai-based, serving globally.">
+<link rel="canonical" href="https://www.gtmace.com/" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
 
-html { scroll-behavior: smooth; }
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">GTM Ace</a>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="/blog/">Blog</a>
+    <a href="https://calendly.com/rahul-gtmace/30min" target="_blank" class="nav-cta">Book a free call</a>
+  </div>
+  <a href="https://calendly.com/rahul-gtmace/30min" target="_blank" class="mobile-cta">Book a free call</a>
+  <!-- ADD THESE TWO (they won’t affect desktop) -->
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="hamburger">☰</label>
+</nav>
 
-:root {
-  --navy: #0B1929;
-  --navy-mid: #132338;
-  --navy-light: #1E3A5F;
-  --blue: #1A6FD4;
-  --accent: #E8F0FE;
-  --white: #FFFFFF;
-  --off-white: #F5F7FA;
-  --gray-100: #EEF1F6;
-  --gray-200: #D8DDE8;
-  --gray-400: #8A93A6;
-  --text: #0B1929;
-  --text-muted: #4A5568;
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge"><span></span> Fractional CMO &amp; Marketing Consultant</div>
+    <h1>Strategic Marketing that builds your Lead funnel and improves Revenue in 90 days</h1>
+    <p>I help B2B startups, SMEs, and SaaS companies at $0–$15M ARR stage build scalable marketing engines — without the cost of a full-time CMO.</p>
+    <div class="hero-btns">
+      <a href="https://calendly.com/rahul-gtmace/30min" target="_blank" class="btn-primary">Book a free 30-min call</a>
+      <button class="btn-ghost" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">How I can help</button>
+  </div>
+</section>
 
-  --heading: 'Libre Baskerville', serif;
-  --body: 'Figtree', sans-serif;
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item"><span class="stat-num">20+</span><div class="stat-label">Years in SaaS, Startup, SME and Enterprise Marketing</div></div>
+    <div class="stat-item"><span class="stat-num">0-1 & 1-100</span><div class="stat-label">Scaling specialist</div></div>
+    <div class="stat-item"><span class="stat-num">3</span><div class="stat-label">Focused engagement types</div></div>
+  </div>
+</div>
 
-  --radius: 12px;
-  --radius-sm: 8px;
+<!-- PROBLEM -->
+<section class="section">
+  <div class="section-title">The Problem</div>
+  <div class="section-sub">As a business, you want to focus on your products and offerings the most. Instead, majority of your time is wasted worrying about positioning, sales funnels, or Go-To-Market strategy.</div>
+  <div class="problems">
+    <div class="problem-card">
+      <div class="problem-icon" style="background:#FEE8E8;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 3v18h18" stroke="#C0392B" stroke-width="2"/><path d="M7 14l4-4 3 3 5-5" stroke="#C0392B" stroke-width="2"/></svg></div>
+      <h3>Inconsistent Sales Funnel</h3>
+      <p>You have a great product but marketing isn't generating the leads your sales team needs to hit targets.</p>
+    </div>
+    <div class="problem-card">
+      <div class="problem-icon" style="background:#FFF3E0;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="12" rx="2" stroke="#E67E22" stroke-width="2"/><circle cx="12" cy="12" r="3" stroke="#E67E22" stroke-width="2"/></svg></div>
+      <h3>Spending Exceeding Conversion</h3>
+      <p>You're running ads and creating content but can't connect any of it back to actual revenue.</p>
+    </div>
+    <div class="problem-card">
+      <div class="problem-icon" style="background:#E8F5E9;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#27AE60" stroke-width="2"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6" stroke="#27AE60" stroke-width="2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#27AE60" stroke-width="2"/><path d="M14 10l-4 4 6-2-2-6z" fill="#27AE60"/></svg></div>
+      <h3>No Marketing Leadership</h3>
+      <p>You need a CMO-level thinker but can't justify the full-time cost at your current stage of growth.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="section-title">Ways We Can Work Together</div>
+  <div class="section-sub services-sub">Choose the engagement that matches where you are right now. Most clients start with a sprint or audit and move into a fractional retainer. Each engagement is designed to drive measurable outcomes — from diagnosing what's broken to owning your marketing strategy end-to-end.</div>
+  <div class="offers">
+    <div class="offer-card">
+      <div class="offer-tag">Quick start</div>
+      <h3>Marketing Audit</h3>
+      <p>A full review of your marketing engine — messaging, channels, funnel, and team — with a prioritised action plan to fix what's broken fast.</p>
+      <div class="offer-meta">1–2 weeks &nbsp;&middot;&nbsp; Fixed fee</div>
+    </div>
+    <div class="offer-card featured">
+      <div class="offer-tag pop">Most popular</div>
+      <h3>GTM Sprint</h3>
+      <p>Define your ICP, sharpen your positioning, and build a 90-day go-to-market plan that aligns marketing and sales around one goal: revenue generation.</p>
+      <div class="offer-meta">3–4 weeks &nbsp;&middot;&nbsp; Fixed fee</div>
+    </div>
+    <div class="offer-card">
+      <div class="offer-tag">Ongoing</div>
+      <h3>Fractional CMO</h3>
+      <p>Senior marketing leadership on a part-time basis. I embed with your team, own the strategy, and drive execution — at a fraction of the full-time cost.</p>
+      <div class="offer-meta">3–6 months &nbsp;&middot;&nbsp; Monthly retainer</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- EXPERTISE -->
+<section class="section">
+  <div class="section-title">What I Bring To Your Team</div>
+  <div class="section-sub">Twenty years building and scaling marketing for B2B SaaS, IT and other companies across every stage of growth — from zero to mid-market.</div>
+  <div class="tags">
+    <span class="tag">GTM Strategy</span>
+    <span class="tag">Demand Generation</span>
+    <span class="tag">Product Marketing</span>
+    <span class="tag">Branding &amp; Positioning</span>
+    <span class="tag">Content &amp; SEO</span>
+    <span class="tag">ICP Definition</span>
+    <span class="tag">Pipeline Building</span>
+    <span class="tag">Marketing &amp; Sales Alignment</span>
+    <span class="tag">Early-stage Startups</span>
+    <span class="tag">Growth-stage Scale-up</span>
+    <span class="tag">Mid-market B2B</span>
+    <span class="tag">B2B SaaS</span>
+    <span class="tag">Public Relations</span>
+    <span class="tag">Analyst Relations</span>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-title">Who I Am</div>
+  <div class="about-grid">
+    <div>
+      <img src="/images/rahul-sawant.jpg" alt="Rahul Sawant" class="avatar-photo">
+<a href="https://www.linkedin.com/in/rahuldsawant/" target="_blank" class="nav-cta" style="margin-top:15px; display:inline-block;">LinkedIn Profile</a>
+    </div>
+    <div class="about-text">
+      <p>I'm Rahul Sawant, a SaaS marketing leader based in Mumbai with over 20 years of experience helping B2B tech companies grow. I've worked across early-stage startups, growth-stage scale-ups, and mid-market companies — building marketing functions from scratch and scaling what already exists.</p>
+      <p>I work with a small number of founders and leadership teams at a time so I can go deep, move fast, and actually move the needle. No agency overhead. No junior teams. Just senior thinking applied directly to your biggest marketing challenges.</p>
+      <p>If you're building something meaningful in the SaaS space and marketing isn't keeping up — let's talk.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="section-title">Testimonials</div>
+  <div class="testimonials">
+    <div class="testi">
+      <!-- <div class="testi-quote">&ldquo;</div> -->
+      <div class="testi-text">" As a Fractional CMO, Rahul helped us with Product Marketing, Product Testing, identifying significant red flags and developing the overall GTM Strategy. His deep research and understanding of the product have helped us ramp up our GTM tremendously. "</div>
+      <div class="testi-name">Co-founder, Tech Startup</div>
+      <!-- <div class="testi-role">Company</div> -->
+    </div>
+    <div class="testi">
+      <!-- <div class="testi-quote">&ldquo;</div> -->
+      <div class="testi-text">" Rahul has been working with us for the past several years. His strategic marketing mindset, extensive experience, and professional approach have enabled us to deliver positive marketing and revenue outcomes for clients across diverse industries. "</div>
+      <div class="testi-name">Founder, Digital Agency</div>
+      <!-- <div class="testi-role">Company</div> -->
+    </div>
+    <div class="testi">
+      <!-- <div class="testi-quote">&ldquo;</div> -->
+      <div class="testi-text">" Rahul helped us with a thorough audit of our existing marketing operations and campaigns, and developed a revised marketing and content plan for us. He also assisted us in building a marketing team and ensured smooth BAU post-engagement. "</div>
+      <div class="testi-name">CEO, IT Services Company</div>
+      <!-- <div class="testi-role">Company</div> -->
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <div class="cta-inner">
+    <h2>Ready to fix your marketing?</h2>
+    <p>Book a free 30-minute strategy call. No pitch, no pressure — just an honest conversation about where your marketing is and what it could be.</p>
+    <a href="https://calendly.com/rahul-gtmace/30min" target="_blank" class="btn-primary" style="font-size: 16px; padding: 15px 40px;">Book your free 30-min call</a><p style="margin-top:12px;font-size:13px;color:rgba(255,255,255,0.6);">
+Or reach out to me on rahul(@)gtmace(dot)com
+</p>
+    <div class="cta-note">No commitment required &nbsp;&middot;&nbsp; Mumbai, India &amp; remote</div>
+  </div>
+</section>
+
+<footer>
+  GTM Ace &nbsp;&middot;&nbsp; Rahul Sawant — Fractional CMO &amp; Marketing Consultant &nbsp;&middot;&nbsp; Mumbai, India
+  <br><br>
+  <span style="font-size: 11px;">&#169; 2026 &nbsp;&middot;&nbsp; <a href="https://www.linkedin.com/in/rahulsawant" style="color: var(--gray-400);">LinkedIn</a> &nbsp;&middot;&nbsp; <a href="mailto:rahul@gtmace.com" style="color: var(--gray-400);">rahul@gtmace.com</a></span>
+</footer>
+
+
+<!-- <script src="/js/blog.js"></script> -->
+<script>
+async function renderBlogPreview(id, limit){
+ const res = await fetch('/content/blog/');
+ const txt = await res.text();
+ const matches = [...txt.matchAll(/href="(.*?\.json)"/g)];
+ const files = matches.map(m=>m[1]);
+ const posts = await Promise.all(files.map(f=>fetch('/content/blog/'+f).then(r=>r.json())));
+ posts.sort((a,b)=>new Date(b.date)-new Date(a.date));
+ const el=document.getElementById(id);
+ posts.slice(0,limit).forEach(p=>{
+  el.innerHTML+=`<div style="margin-bottom:20px;"><h3>${p.title}</h3><p>${p.description||''}</p><a href="/blog/${p.slug}">Read →</a></div>`;
+ });
 }
-
-body {
-  font-family: var(--body);
-  color: var(--text);
-  background: var(--white);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-}
-
-/* =========================
-   NAV (DESKTOP)
-========================= */
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.1rem 3rem;
-  background: rgba(255,255,255,0.95);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--gray-200);
-}
-
-.nav-logo {
-  font-family: var(--heading);
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--navy);
-  text-decoration: none;
-}
-
-.nav-logo:hover { opacity: 0.8; }
-
-.nav-links {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
-
-.nav-links a {
-  font-size: 18px;
-  color: var(--text-muted);
-  text-decoration: none;
-}
-
-.nav-links a:hover { color: var(--navy); }
-
-.nav-cta {
-  background: var(--navy-light);
-  color: #fff !important;
-  padding: 13px 30px;
-  border-radius: var(--radius-sm);
-  text-decoration: none;
-}
-
-/* =========================
-   MOBILE NAV SYSTEM
-========================= */
-#menu-toggle { display: none; }
-
-.hamburger {
-  display: none;
-  font-size: 22px;
-  cursor: pointer;
-}
-
-/* =========================
-   HERO
-========================= */
-.hero {
-  background: var(--navy);
-  padding: 7rem 3rem 6rem;
-  text-align: center;
-}
-
-.hero-inner {
-  max-width: 780px;
-  margin: 0 auto;
-}
-
-.hero h1 {
-  font-family: var(--heading);
-  font-size: 44px;
-  color: var(--white);
-  margin-bottom: 1.5rem;
-}
-
-.hero p {
-  font-size: 18px;
-  color: rgba(255,255,255,0.65);
-  max-width: 580px;
-  margin: 0 auto 2.5rem;
-}
-
-/* =========================
-   SECTIONS
-========================= */
-.section {
-  padding: 5rem 3rem;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.section-title {
-  font-family: var(--heading);
-  font-size: 34px;
-  margin-bottom: 1rem;
-}
-
-.section-sub {
-  font-size: 16px;
-  color: var(--text-muted);
-}
-
-/* =========================
-   BLOG
-========================= */
-.container {
-  max-width: 1100px;
-  margin: 80px auto;
-  padding: 0 20px;
-}
-
-.blog-container {
-  max-width: 800px;
-  margin: 80px auto;
-  padding: 0 20px;
-}
-
-.blog-image img {
-  width: 100%;
-  border-radius: var(--radius);
-}
-
-.blog-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.blog-card-horizontal {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  text-decoration: none;
-  color: inherit;
-}
-
-.blog-card-image {
-  width: 120px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.blog-card-content h3 {
-  font-size: 18px;
-}
-
-.blog-card-content p {
-  font-size: 14px;
-  color: #666;
-}
-
-/* =========================
-   FOOTER
-========================= */
-footer {
-  padding: 2rem;
-  text-align: center;
-  font-size: 13px;
-  color: var(--gray-400);
-  border-top: 1px solid var(--gray-100);
-}
-
-/* =========================
-   MOBILE (ONLY CHANGES)
-========================= */
-@media (max-width: 768px) {
-
-  /* NAV LAYOUT */
-  nav {
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    align-items: center;
-    gap: 10px;
-    padding: 1rem 1.5rem;
-  }
-
-  .nav-logo { grid-column: 1; }
-
-  .nav-cta {
-    grid-column: 2;
-    padding: 8px 12px;
-    font-size: 14px;
-    white-space: nowrap;
-  }
-
-  .hamburger {
-    display: block;
-    grid-column: 3;
-  }
-
-  .nav-links {
-    display: none;
-    grid-column: 1 / -1;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 12px;
-  }
-
-  #menu-toggle:checked ~ .nav-links {
-    display: flex;
-  }
-
-  /* BLOG */
-  .blog-card-horizontal {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .blog-card-image {
-    width: 100%;
-    height: auto;
-  }
-
-  .section {
-    padding: 3.5rem 1.5rem;
-  }
-
-  .hero {
-    padding: 5rem 1.5rem 4rem;
-  }
-}
+<!-- renderBlogPreview("blog-preview",3); -->
+</script>
+</body>
+</html>
