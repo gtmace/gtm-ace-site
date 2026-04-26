@@ -1,5 +1,42 @@
 /* =========================
-   NAV (DESKTOP - UNCHANGED)
+   RESET + GLOBAL
+========================= */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+:root {
+  --navy: #0B1929;
+  --navy-mid: #132338;
+  --navy-light: #1E3A5F;
+  --blue: #1A6FD4;
+  --accent: #E8F0FE;
+  --white: #FFFFFF;
+  --off-white: #F5F7FA;
+  --gray-100: #EEF1F6;
+  --gray-200: #D8DDE8;
+  --gray-400: #8A93A6;
+  --text: #0B1929;
+  --text-muted: #4A5568;
+
+  --heading: 'Libre Baskerville', serif;
+  --body: 'Figtree', sans-serif;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+
+body {
+  font-family: var(--body);
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* =========================
+   NAV (DESKTOP)
 ========================= */
 nav {
   position: sticky;
@@ -20,7 +57,6 @@ nav {
   font-weight: 700;
   color: var(--navy);
   text-decoration: none;
-  transition: opacity 0.2s ease;
 }
 
 .nav-logo:hover { opacity: 0.8; }
@@ -47,31 +83,132 @@ nav {
   text-decoration: none;
 }
 
-
 /* =========================
-   MOBILE NAV SYSTEM (NEW)
-   ⚠️ This REPLACES old mobile nav
+   MOBILE NAV SYSTEM
 ========================= */
+#menu-toggle { display: none; }
 
-/* Hidden checkbox */
-#menu-toggle {
-  display: none;
-}
-
-/* Hamburger (hidden on desktop) */
 .hamburger {
   display: none;
   font-size: 22px;
   cursor: pointer;
 }
 
+/* =========================
+   HERO
+========================= */
+.hero {
+  background: var(--navy);
+  padding: 7rem 3rem 6rem;
+  text-align: center;
+}
+
+.hero-inner {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-family: var(--heading);
+  font-size: 44px;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 18px;
+  color: rgba(255,255,255,0.65);
+  max-width: 580px;
+  margin: 0 auto 2.5rem;
+}
 
 /* =========================
-   MOBILE ONLY (<=768px)
+   SECTIONS
+========================= */
+.section {
+  padding: 5rem 3rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: var(--heading);
+  font-size: 34px;
+  margin-bottom: 1rem;
+}
+
+.section-sub {
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+/* =========================
+   BLOG
+========================= */
+.container {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.blog-container {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.blog-image img {
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+.blog-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blog-card-horizontal {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-card-image {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.blog-card-content h3 {
+  font-size: 18px;
+}
+
+.blog-card-content p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  padding: 2rem;
+  text-align: center;
+  font-size: 13px;
+  color: var(--gray-400);
+  border-top: 1px solid var(--gray-100);
+}
+
+/* =========================
+   MOBILE (ONLY CHANGES)
 ========================= */
 @media (max-width: 768px) {
 
-  /* NAV LAYOUT: Logo | CTA | ☰ */
+  /* NAV LAYOUT */
   nav {
     display: grid;
     grid-template-columns: 1fr auto auto;
@@ -80,9 +217,7 @@ nav {
     padding: 1rem 1.5rem;
   }
 
-  .nav-logo {
-    grid-column: 1;
-  }
+  .nav-logo { grid-column: 1; }
 
   .nav-cta {
     grid-column: 2;
@@ -91,34 +226,24 @@ nav {
     white-space: nowrap;
   }
 
-  /* Show hamburger */
   .hamburger {
     display: block;
     grid-column: 3;
   }
 
-  /* Hide menu initially */
   .nav-links {
     display: none;
     grid-column: 1 / -1;
     flex-direction: column;
     gap: 12px;
     margin-top: 12px;
-    width: 100%;
   }
 
-  /* Toggle menu (CSS only) */
   #menu-toggle:checked ~ .nav-links {
     display: flex;
   }
-}
 
-
-/* =========================
-   BLOG RESPONSIVE (KEEP)
-========================= */
-@media (max-width: 768px) {
-
+  /* BLOG */
   .blog-card-horizontal {
     flex-direction: column;
     align-items: flex-start;
@@ -127,17 +252,6 @@ nav {
   .blog-card-image {
     width: 100%;
     height: auto;
-  }
-
-  .featured-post {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .container,
-  .blog-container {
-    margin: 60px auto;
-    padding: 0 16px;
   }
 
   .section {
