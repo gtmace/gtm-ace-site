@@ -396,7 +396,7 @@
   }
 
     nav { padding: 1rem 1.5rem; }
-    .nav-links { display: none; }
+    .nav-links { display: flex; }
     .mobile-cta { display: inline-block; }
     .hero { padding: 5rem 1.5rem 4rem; }
     .hero h1 {
