@@ -337,7 +337,7 @@
 
   /* MOBILE CTA BUTTON */
   .mobile-cta {
-    display: flex;
+    display: none;
     background: var(--navy); color: var(--white);
     border: none; padding: 9px 22px;
     border-radius: var(--radius-sm);
@@ -396,7 +396,7 @@
   }
 
     nav { padding: 1rem 1.5rem; }
-    .nav-links { display: flex; }
+    .nav-links { display: none; }
     .mobile-cta { display: inline-block; }
     .hero { padding: 5rem 1.5rem 4rem; }
     .hero h1 {
