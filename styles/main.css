@@ -1,210 +1,814 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fractional CMO &amp; SaaS Marketing Consultant – Rahul Sawant</title>
-<meta property="og:title" content="Fractional CMO &amp; SaaS Marketing Consultant – Rahul Sawant">
-<meta property="og:description" content="Fractional CMO & Marketing Consultant for B2B startups & SaaS in India. Build your sales funnel and GTM engine in 90 days — without hiring a full-time CMO. Mumbai-based, serving globally.">
-<link rel="canonical" href="https://www.gtmace.com/" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles/main.css">
-</head>
-<body>
+/* Old Index.html style code */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-<!-- NAV -->
-<nav>
-  <a href="/" class="nav-logo">GTM Ace</a>
-  <div class="nav-links">
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <a href="/blog/">Blog</a>
-    <a href="https://calendly.com/rahul-gtmace/30min" target="_blank" class="nav-cta">Book a free call</a>
-  </div>
-  <a href="https://calendly.com/rahul-gtmace/30min" target="_blank" class="mobile-cta">Book a free call</a>
-  <!-- ADD THESE TWO (they won’t affect desktop) -->
-  <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="hamburger">☰</label>
-</nav>
+  :root {
+    --navy: #0B1929;
+    --navy-mid: #132338;
+    --navy-light: #1E3A5F;
+    --blue: #1A6FD4;
+    --blue-light: #3B8FFF;
+    --accent: #E8F0FE;
+    --gold: #C9A84C;
+    --white: #FFFFFF;
+    --off-white: #F5F7FA;
+    --gray-100: #EEF1F6;
+    --gray-200: #D8DDE8;
+    --gray-400: #8A93A6;
+    --gray-600: #4A5568;
+    --text: #0B1929;
+    --text-muted: #4A5568;
+    --heading: 'Neue Haas Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --body: 'Figtree', sans-serif;
+    --radius: 12px;
+    --radius-sm: 8px;
+  }
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-badge"><span></span> Fractional CMO &amp; Marketing Consultant</div>
-    <h1>Strategic Marketing that builds your Lead funnel and improves Revenue in 90 days</h1>
-    <p>I help B2B startups, SMEs, and SaaS companies at $0–$15M ARR stage build scalable marketing engines — without the cost of a full-time CMO.</p>
-    <div class="hero-btns">
-      <a href="https://calendly.com/rahul-gtmace/30min" target="_blank" class="btn-primary">Book a free 30-min call</a>
-      <button class="btn-ghost" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">How I can help</button>
-  </div>
-</section>
+  html { scroll-behavior: smooth; }
 
-<!-- STATS -->
-<div class="stats-bar">
-  <div class="stats-inner">
-    <div class="stat-item"><span class="stat-num">20+</span><div class="stat-label">Years in SaaS, Startup, SME and Enterprise Marketing</div></div>
-    <div class="stat-item"><span class="stat-num">0-1 & 1-100</span><div class="stat-label">Scaling specialist</div></div>
-    <div class="stat-item"><span class="stat-num">3</span><div class="stat-label">Focused engagement types</div></div>
-  </div>
-</div>
+  body {
+    font-family: var(--body);
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
 
-<!-- PROBLEM -->
-<section class="section">
-  <div class="section-title">The Problem</div>
-  <div class="section-sub">As a business, you want to focus on your products and offerings the most. Instead, majority of your time is wasted worrying about positioning, sales funnels, or Go-To-Market strategy.</div>
-  <div class="problems">
-    <div class="problem-card">
-      <div class="problem-icon" style="background:#FEE8E8;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 3v18h18" stroke="#C0392B" stroke-width="2"/><path d="M7 14l4-4 3 3 5-5" stroke="#C0392B" stroke-width="2"/></svg></div>
-      <h3>Inconsistent Sales Funnel</h3>
-      <p>You have a great product but marketing isn't generating the leads your sales team needs to hit targets.</p>
-    </div>
-    <div class="problem-card">
-      <div class="problem-icon" style="background:#FFF3E0;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="12" rx="2" stroke="#E67E22" stroke-width="2"/><circle cx="12" cy="12" r="3" stroke="#E67E22" stroke-width="2"/></svg></div>
-      <h3>Spending Exceeding Conversion</h3>
-      <p>You're running ads and creating content but can't connect any of it back to actual revenue.</p>
-    </div>
-    <div class="problem-card">
-      <div class="problem-icon" style="background:#E8F5E9;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#27AE60" stroke-width="2"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6" stroke="#27AE60" stroke-width="2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#27AE60" stroke-width="2"/><path d="M14 10l-4 4 6-2-2-6z" fill="#27AE60"/></svg></div>
-      <h3>No Marketing Leadership</h3>
-      <p>You need a CMO-level thinker but can't justify the full-time cost at your current stage of growth.</p>
-    </div>
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- SERVICES -->
-<section class="section" id="services">
-  <div class="section-title">Ways We Can Work Together</div>
-  <div class="section-sub services-sub">Choose the engagement that matches where you are right now. Most clients start with a sprint or audit and move into a fractional retainer. Each engagement is designed to drive measurable outcomes — from diagnosing what's broken to owning your marketing strategy end-to-end.</div>
-  <div class="offers">
-    <div class="offer-card">
-      <div class="offer-tag">Quick start</div>
-      <h3>Marketing Audit</h3>
-      <p>A full review of your marketing engine — messaging, channels, funnel, and team — with a prioritised action plan to fix what's broken fast.</p>
-      <div class="offer-meta">1–2 weeks &nbsp;&middot;&nbsp; Fixed fee</div>
-    </div>
-    <div class="offer-card featured">
-      <div class="offer-tag pop">Most popular</div>
-      <h3>GTM Sprint</h3>
-      <p>Define your ICP, sharpen your positioning, and build a 90-day go-to-market plan that aligns marketing and sales around one goal: revenue generation.</p>
-      <div class="offer-meta">3–4 weeks &nbsp;&middot;&nbsp; Fixed fee</div>
-    </div>
-    <div class="offer-card">
-      <div class="offer-tag">Ongoing</div>
-      <h3>Fractional CMO</h3>
-      <p>Senior marketing leadership on a part-time basis. I embed with your team, own the strategy, and drive execution — at a fraction of the full-time cost.</p>
-      <div class="offer-meta">3–6 months &nbsp;&middot;&nbsp; Monthly retainer</div>
-    </div>
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- EXPERTISE -->
-<section class="section">
-  <div class="section-title">What I Bring To Your Team</div>
-  <div class="section-sub">Twenty years building and scaling marketing for B2B SaaS, IT and other companies across every stage of growth — from zero to mid-market.</div>
-  <div class="tags">
-    <span class="tag">GTM Strategy</span>
-    <span class="tag">Demand Generation</span>
-    <span class="tag">Product Marketing</span>
-    <span class="tag">Branding &amp; Positioning</span>
-    <span class="tag">Content &amp; SEO</span>
-    <span class="tag">ICP Definition</span>
-    <span class="tag">Pipeline Building</span>
-    <span class="tag">Marketing &amp; Sales Alignment</span>
-    <span class="tag">Early-stage Startups</span>
-    <span class="tag">Growth-stage Scale-up</span>
-    <span class="tag">Mid-market B2B</span>
-    <span class="tag">B2B SaaS</span>
-    <span class="tag">Public Relations</span>
-    <span class="tag">Analyst Relations</span>
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- ABOUT -->
-<section class="section" id="about">
-  <div class="section-title">Who I Am</div>
-  <div class="about-grid">
-    <div>
-      <img src="/images/rahul-sawant.jpg" alt="Rahul Sawant" class="avatar-photo">
-<a href="https://www.linkedin.com/in/rahuldsawant/" target="_blank" class="nav-cta" style="margin-top:15px; display:inline-block;">LinkedIn Profile</a>
-    </div>
-    <div class="about-text">
-      <p>I'm Rahul Sawant, a SaaS marketing leader based in Mumbai with over 20 years of experience helping B2B tech companies grow. I've worked across early-stage startups, growth-stage scale-ups, and mid-market companies — building marketing functions from scratch and scaling what already exists.</p>
-      <p>I work with a small number of founders and leadership teams at a time so I can go deep, move fast, and actually move the needle. No agency overhead. No junior teams. Just senior thinking applied directly to your biggest marketing challenges.</p>
-      <p>If you're building something meaningful in the SaaS space and marketing isn't keeping up — let's talk.</p>
-    </div>
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- TESTIMONIALS -->
-<section class="section">
-  <div class="section-title">Testimonials</div>
-  <div class="testimonials">
-    <div class="testi">
-      <!-- <div class="testi-quote">&ldquo;</div> -->
-      <div class="testi-text">" As a Fractional CMO, Rahul helped us with Product Marketing, Product Testing, identifying significant red flags and developing the overall GTM Strategy. His deep research and understanding of the product have helped us ramp up our GTM tremendously. "</div>
-      <div class="testi-name">Co-founder, Tech Startup</div>
-      <!-- <div class="testi-role">Company</div> -->
-    </div>
-    <div class="testi">
-      <!-- <div class="testi-quote">&ldquo;</div> -->
-      <div class="testi-text">" Rahul has been working with us for the past several years. His strategic marketing mindset, extensive experience, and professional approach have enabled us to deliver positive marketing and revenue outcomes for clients across diverse industries. "</div>
-      <div class="testi-name">Founder, Digital Agency</div>
-      <!-- <div class="testi-role">Company</div> -->
-    </div>
-    <div class="testi">
-      <!-- <div class="testi-quote">&ldquo;</div> -->
-      <div class="testi-text">" Rahul helped us with a thorough audit of our existing marketing operations and campaigns, and developed a revised marketing and content plan for us. He also assisted us in building a marketing team and ensured smooth BAU post-engagement. "</div>
-      <div class="testi-name">CEO, IT Services Company</div>
-      <!-- <div class="testi-role">Company</div> -->
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-section" id="contact">
-  <div class="cta-inner">
-    <h2>Ready to fix your marketing?</h2>
-    <p>Book a free 30-minute strategy call. No pitch, no pressure — just an honest conversation about where your marketing is and what it could be.</p>
-    <a href="https://calendly.com/rahul-gtmace/30min" target="_blank" class="btn-primary" style="font-size: 16px; padding: 15px 40px;">Book your free 30-min call</a><p style="margin-top:12px;font-size:13px;color:rgba(255,255,255,0.6);">
-Or reach out to me on rahul(@)gtmace(dot)com
-</p>
-    <div class="cta-note">No commitment required &nbsp;&middot;&nbsp; Mumbai, India &amp; remote</div>
-  </div>
-</section>
-
-<footer>
-  GTM Ace &nbsp;&middot;&nbsp; Rahul Sawant — Fractional CMO &amp; Marketing Consultant &nbsp;&middot;&nbsp; Mumbai, India
-  <br><br>
-  <span style="font-size: 11px;">&#169; 2026 &nbsp;&middot;&nbsp; <a href="https://www.linkedin.com/in/rahulsawant" style="color: var(--gray-400);">LinkedIn</a> &nbsp;&middot;&nbsp; <a href="mailto:rahul@gtmace.com" style="color: var(--gray-400);">rahul@gtmace.com</a></span>
-</footer>
-
-
-<!-- <script src="/js/blog.js"></script> -->
-<script>
-async function renderBlogPreview(id, limit){
- const res = await fetch('/content/blog/');
- const txt = await res.text();
- const matches = [...txt.matchAll(/href="(.*?\.json)"/g)];
- const files = matches.map(m=>m[1]);
- const posts = await Promise.all(files.map(f=>fetch('/content/blog/'+f).then(r=>r.json())));
- posts.sort((a,b)=>new Date(b.date)-new Date(a.date));
- const el=document.getElementById(id);
- posts.slice(0,limit).forEach(p=>{
-  el.innerHTML+=`<div style="margin-bottom:20px;"><h3>${p.title}</h3><p>${p.description||''}</p><a href="/blog/${p.slug}">Read →</a></div>`;
- });
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.1rem 3rem;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--gray-200);
+  }
+.nav-logo {
+  font-family: var(--heading);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: -0.5px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
 }
-<!-- renderBlogPreview("blog-preview",3); -->
-</script>
-</body>
-</html>
+
+.nav-logo:visited,
+.nav-logo:active {
+  color: var(--navy);
+  text-decoration: none;
+}
+
+/* 👇 ADD HOVER SEPARATELY */
+.nav-logo:hover {
+  color: var(--navy);
+  text-decoration: none;
+  opacity: 0.8;
+}
+  .nav-links { display: flex; gap: 2rem; align-items: center; }
+  .nav-links a {
+    font-size: 18px; font-weight: 500;
+    color: var(--text-muted); text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-cta {
+    background: #1E3A5F;
+    color: #ffffff !important;
+    border: none;
+    padding: 13px 30px;
+    border-radius: var(--radius-sm);
+    font-size: 15px;
+    font-family: var(--body);
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .nav-cta:hover {
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  }
+
+  /* HERO */
+  .hero {
+    background: var(--navy);
+    padding: 7rem 3rem 6rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 50% 0%, #1A3A6A 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-inner { position: relative; max-width: 780px; margin: 0 auto; }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #A8C4F0;
+    font-size: 13px; font-weight: 400;
+    padding: 5px 16px; border-radius: 99px;
+    margin-bottom: 2rem;
+    letter-spacing: 0.3px;
+  }
+  .hero-badge span { width: 6px; height: 6px; border-radius: 50%; background: #4CAF85; display: inline-block; }
+  .hero h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.2;
+    
+    font-family: var(--heading);
+    font-size: 44px; font-weight: 600; font-weight: 600;
+    color: var(--white);
+    line-height: 1.12;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1px;
+  }
+  .hero h1 em { color: #7AB3FF; font-style: normal; }
+  .hero p {
+    margin-top: 10px;
+    font-size: clamp(15px, 2.2vw, 18px);
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+    
+    font-size: 18px; font-weight: 300;
+    color: rgba(255,255,255,0.65);
+    max-width: 580px; margin: 0 auto 2.5rem;
+    line-height: 1.75;
+  }
+  .hero-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--white); color: var(--navy);
+    border: none; padding: 13px 30px;
+    border-radius: var(--radius-sm);
+    font-size: 15px; font-weight: 600;
+    font-family: var(--body);
+    cursor: pointer; transition: transform 0.15s, box-shadow 0.15s;
+    text-decoration: none; display: inline-block;
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
+  .btn-ghost {
+    background: transparent; color: rgba(255,255,255,0.85);
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 13px 30px; border-radius: var(--radius-sm);
+    font-size: 15px; font-family: var(--body); font-weight: 400;
+    cursor: pointer; transition: background 0.2s, border-color 0.2s;
+    text-decoration: none; display: inline-block;
+  }
+  .btn-ghost:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.4); }
+
+  /* STATS BAR */
+  .stats-bar {
+    background: var(--navy-mid);
+    border-top: 1px solid rgba(255,255,255,0.07);
+  }
+  .stats-inner {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    max-width: 700px; margin: 0 auto;
+  }
+  .stat-item {
+    padding: 2rem 1.5rem; text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.07);
+  }
+  .stat-item:last-child { border-right: none; }
+  .stat-num {
+    font-family: var(--heading);
+    font-size: 32px; font-weight: 700; color: #7AB3FF;
+    display: block; margin-bottom: 4px; letter-spacing: -0.5px;
+  }
+  .stat-label { font-size: 12px; color: rgba(255,255,255,0.45); font-weight: 300; line-height: 1.4; }
+
+  /* SECTIONS */
+  .section { padding: 5rem 3rem; max-width: 960px; margin: 0 auto; }
+  .section-title {
+    font-family: var(--heading);
+    font-size: 34px; font-weight: 700;
+    line-height: 1.15; margin-bottom: 1rem;
+    color: var(--navy); letter-spacing: -0.5px;
+  }
+  .section-sub {
+    font-size: 16px; color: var(--text-muted);
+    line-height: 1.75;
+  }
+  .divider { border: none; border-top: 1px solid var(--gray-100); }
+
+  /* PROBLEMS */
+  .problems { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2.5rem; }
+  .problem-card {
+    background: var(--off-white);
+    border-radius: var(--radius); padding: 1.5rem;
+    border: 1px solid var(--gray-100);
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .problem-card:hover { border-color: var(--gray-200); transform: translateY(-2px); }
+  .problem-icon {
+    margin: 0 auto 14px;
+    width: 40px; height: 40px;
+    border-radius: var(--radius-sm);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 14px;
+    font-size: 20px;
+  }
+  .problem-card h3 { font-family: var(--heading); font-size: 15px; font-weight: 600; margin-bottom: 8px; color: var(--navy); }
+  .problem-card p { font-size: 13px; color: var(--text-muted); line-height: 1.65; }
+
+  /* OFFERS */
+  .offers { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-top: 2.5rem; }
+  .offer-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius); padding: 1.75rem;
+    transition: box-shadow 0.2s, transform 0.2s;
+    position: relative; display: flex; flex-direction: column;
+  }
+  .offer-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.08); transform: translateY(-2px); }
+  .offer-card.featured {
+    border: 2px solid var(--blue);
+    background: linear-gradient(135deg, #F0F6FF 0%, #FFFFFF 60%);
+  }
+  .offer-tag {
+    display: inline-block;
+    font-family: var(--heading);
+    font-size: 11px; font-weight: 600;
+    padding: 3px 12px; border-radius: 99px;
+    margin-bottom: 14px;
+    background: var(--accent); color: var(--blue);
+    letter-spacing: 0.3px; text-transform: uppercase;
+  }
+  .offer-tag.pop { background: var(--blue); color: var(--white); }
+  .offer-card h3 { font-family: var(--heading); font-size: 18px; font-weight: 600; color: var(--navy); margin-bottom: 10px; }
+  .offer-card p { font-size: 14px; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.25rem; flex: 1; }
+  .offer-meta {
+    font-size: 12px; color: var(--gray-400);
+    border-top: 1px solid var(--gray-100);
+    padding-top: 14px;
+  }
+
+  /* SERVICES sub-text width match */
+  .services-sub { max-width: 100%; }
+
+  /* EXPERTISE */
+  .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 2rem; }
+  .tag {
+    background: var(--off-white);
+    border: 1px solid var(--gray-200);
+    border-radius: 99px;
+    padding: 7px 18px;
+    font-size: 13px; color: var(--text-muted);
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .tag:hover { background: var(--accent); border-color: #B5D4F4; color: var(--navy); }
+
+  /* ABOUT */
+  .about-grid { display: grid; grid-template-columns: 180px 1fr; gap: 3rem; align-items: start; margin-top: 2.5rem; }
+  .avatar-photo {
+    width: 150px; height: 150px;
+    border-radius: var(--radius);
+    object-fit: cover; object-position: center top;
+    display: block;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  }
+  .about-text p { font-size: 15px; color: var(--text-muted); line-height: 1.8; margin-bottom: 1rem; }
+
+  /* TESTIMONIALS */
+  .testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-top: 2.5rem; }
+  .testi {
+    background: var(--off-white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius); padding: 1.5rem;
+  }
+  .testi-quote {
+    font-size: 28px; color: var(--gray-200);
+    font-family: var(--heading); line-height: 1;
+    margin-bottom: 8px;
+  }
+  .testi-text {
+    font-size: 14px; color: var(--text-muted);
+    line-height: 1.75; font-style: italic;
+    margin-bottom: 1.25rem;
+  }
+  .testi-name { font-family: var(--heading); font-size: 14px; font-weight: 600; color: var(--navy); }
+  .testi-role { font-size: 12px; color: var(--gray-400); margin-top: 2px; }
+
+  /* CTA SECTION */
+  .cta-section {
+    background: var(--navy);
+    margin: 0 3rem 4rem;
+    border-radius: 20px;
+    padding: 5rem 3rem;
+    text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .cta-section::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 80% at 50% 0%, #1A3A6A, transparent);
+    pointer-events: none;
+  }
+  .cta-inner { position: relative; max-width: 540px; margin: 0 auto; }
+  .cta-section h2 {
+    font-family: var(--heading);
+    font-size: 36px; font-weight: 700; color: var(--white);
+    margin-bottom: 1rem; line-height: 1.2; letter-spacing: -0.5px;
+  }
+  .cta-section p {
+    font-size: 16px; color: rgba(255,255,255,0.6);
+    margin-bottom: 2rem; line-height: 1.75;
+  }
+  .cta-note { font-size: 12px; color: rgba(255,255,255,0.35); margin-top: 1rem; }
+
+  /* FOOTER */
+  footer {
+    padding: 2rem 3rem;
+    text-align: center;
+    font-size: 13px; color: var(--gray-400);
+    border-top: 1px solid var(--gray-100);
+  }
+
+  /* MOBILE CTA BUTTON */
+  .mobile-cta {
+    display: none;
+    background: var(--navy); color: var(--white);
+    border: none; padding: 9px 22px;
+    border-radius: var(--radius-sm);
+    font-size: 14px; font-family: var(--body);
+    font-weight: 500; cursor: pointer;
+    text-decoration: none;
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero-inner > * {
+    animation: fadeUp 0.6s ease forwards;
+    opacity: 0;
+  }
+  .hero-badge { animation-delay: 0.1s; }
+  .hero h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.2;
+     animation-delay: 0.2s; }
+  .hero p {
+    margin-top: 10px;
+    font-size: clamp(15px, 2.2vw, 18px);
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+     animation-delay: 0.3s; }
+  .hero-btns { animation-delay: 0.4s; }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+  .hero h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.2;
+    font-size: 34px;
+    line-height: 1.25;
+  }
+  .hero p {
+    margin-top: 10px;
+    font-size: clamp(15px, 2.2vw, 18px);
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+    nav { padding: 1rem 1.5rem; }
+    .nav-links {     
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    }
+    
+    .nav-cta {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    }
+    .mobile-cta { display: inline-block; }
+    .hero { padding: 5rem 1.5rem 4rem; }
+    .hero h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.2;
+     font-size: 34px; }
+    .section { padding: 3.5rem 1.5rem; }
+    .about-grid { grid-template-columns: 1fr; }
+    .stats-inner { grid-template-columns: 1fr; }
+    .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .cta-section { margin: 0 1.5rem 3rem; padding: 3.5rem 1.5rem; }
+    footer { padding: 2rem 1.5rem; }
+  }
+
+
+/* =========================
+   RESET + GLOBAL
+========================= */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+:root {
+  --navy: #0B1929;
+  --navy-mid: #132338;
+  --navy-light: #1E3A5F;
+  --blue: #1A6FD4;
+  --blue-light: #3B8FFF;
+  --accent: #E8F0FE;
+  --gold: #C9A84C;
+  --white: #FFFFFF;
+  --off-white: #F5F7FA;
+  --gray-100: #EEF1F6;
+  --gray-200: #D8DDE8;
+  --gray-400: #8A93A6;
+  --gray-600: #4A5568;
+  --text: #0B1929;
+  --text-muted: #4A5568;
+
+  --heading: 'Neue Haas Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --body: 'Figtree', sans-serif;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+
+body {
+  font-family: var(--body);
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* =========================
+   NAV
+========================= */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem 3rem;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.nav-logo {
+  font-family: var(--heading);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--navy);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.nav-logo:hover { opacity: 0.8; }
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 18px;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.nav-links a:hover { color: var(--navy); }
+
+.nav-cta {
+  background: var(--navy-light);
+  color: #fff !important;
+  padding: 13px 30px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  background: var(--navy);
+  padding: 7rem 3rem 6rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-inner {
+  position: relative;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-family: var(--heading);
+  font-size: 44px;
+  color: var(--white);
+  line-height: 1.12;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 18px;
+  color: rgba(255,255,255,0.65);
+  max-width: 580px;
+  margin: 0 auto 2.5rem;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn-primary {
+  background: var(--white);
+  color: var(--navy);
+  padding: 13px 30px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+}
+
+.btn-ghost {
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 13px 30px;
+  border-radius: var(--radius-sm);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+.section {
+  padding: 5rem 3rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: var(--heading);
+  font-size: 34px;
+  margin-bottom: 1rem;
+}
+
+.section-sub {
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+/* =========================
+   BLOG
+========================= */
+.container {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.blog-container {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.blog-image {
+  width: 100%;
+  margin: 30px auto;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.blog-image img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-meta {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 30px;
+}
+
+.blog-cta {
+  margin-top: 60px;
+  padding: 30px;
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.blog-title {
+  margin-bottom: 40px;
+}
+
+/* BLOG GRID */
+.blog-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+/* BLOG CARD */
+.blog-card-horizontal {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 12px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* IMAGE */
+.blog-card-image {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* CONTENT */
+.blog-card-content h3 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.blog-card-content p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* READ MORE */
+.read-more {
+  font-size: 14px;
+  color: #1A6FD4;
+  font-weight: 500;
+}
+
+/* HOVER EFFECT */
+.blog-card-horizontal:hover {
+  background: #f7f9fc;
+  transform: translateY(-2px);
+}
+
+.blog-card-horizontal:hover h3 {
+  text-decoration: underline;
+}
+.featured-label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1A6FD4;
+  background: rgba(26, 111, 212, 0.08);
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+.featured-post {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 32px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.featured-post img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--gray-100);
+  display: block;
+}
+
+.featured-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-content h2 {
+  font-size: 28px;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.featured-content p {
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.featured-content a {
+  color: var(--blue);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover img {
+  opacity: 0.9;
+}
+a h2:hover {
+  text-decoration: underline;
+}
+a h3:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  padding: 2rem;
+  text-align: center;
+  font-size: 13px;
+  color: var(--gray-400);
+  border-top: 1px solid var(--gray-100);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  nav { /* padding: 1rem 1.5rem; */ 
+    flex-direction: column;
+    align-items: flex-start;    
+    gap: 16px;
+  }
+  .nav-links { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /*margin-top: 10px;*/
+  }
+
+  .nav-cta {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .section { padding: 3.5rem 1.5rem; }
+
+  .hero { padding: 5rem 1.5rem 4rem; }
+
+  .container,
+  .blog-container {
+    margin: 60px auto;
+    padding: 0 16px;
+  }
+
+  .featured-post {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+}
+@media (max-width: 768px) {
+  .blog-card-horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blog-card-image {
+    width: 100%;
+    height: auto;
+  }
+}
