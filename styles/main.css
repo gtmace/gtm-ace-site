@@ -853,11 +853,8 @@ footer {
     text-align: center;
     margin-top: 10px;
     }*/
-    .nav-cta { display:none}
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-    }
+    .nav-cta { display:none; }
+
    /* .mobile-cta { display: inline-block; }*/
     .mobile-cta { display: flex; }
     .hero { padding: 5rem 1.5rem 4rem; }
