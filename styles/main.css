@@ -848,12 +848,18 @@ footer {
     gap: 12px;
     }
     
-    .nav-cta {
+    /*.nav-cta {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    }*/
+    .nav-cta { display:none}
     width: 100%;
     text-align: center;
     margin-top: 10px;
     }
-    .mobile-cta { display: inline-block; }
+   /* .mobile-cta { display: inline-block; }*/
+    .mobile-cta { display: flex; }
     .hero { padding: 5rem 1.5rem 4rem; }
     .hero h1 {
     font-size: clamp(32px, 5vw, 48px);
