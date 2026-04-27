@@ -84,7 +84,8 @@
     cursor: pointer;
     transition: transform 0.15s, box-shadow 0.15s;
     text-decoration: none;
-    display: inline-block;
+    /*display: inline-block;*/
+    display: flex;
   }
   .nav-cta:hover {
     color: #ffffff !important;
