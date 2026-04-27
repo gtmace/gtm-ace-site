@@ -704,7 +704,8 @@ nav {
 
 .featured-post {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+ /* grid-template-columns: 1.1fr 1fr;*/
+  grid-template-columns: 1fr;
   gap: 32px;
   margin-bottom: 50px;
   align-items: center;
