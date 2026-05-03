@@ -16,27 +16,28 @@
 
 
 <!-- NAV -->
-<nav>
+<nav id="main-nav">
 
   <!-- Logo -->
-  <a href="/" class="nav-logo">GTM Ace</a>
+  <a href="/" class="nav-logo" style="position: relative; z-index: 101;">GTM Ace</a>
 
-  <!-- Desktop links -->
-  <div class="nav-links">
+  <!-- Mobile Hamburger -->
+  <button class="hamburger" id="menu-toggle" aria-label="Toggle menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <!-- Links -->
+  <div class="nav-links" id="nav-links">
     <a href="#services">Services</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
     <a href="/blog/">Blog</a>
-    <!-- CTA (VISIBLE ALWAYS) -->
+    <!-- CTA -->
     <a href="https://calendly.com/rahul-gtmace/30min" target="_blank" class="nav-cta">Book a free call</a>
   </div>
- <a href="https://calendly.com/rahul-gtmace/30min" target="_blank" class="mobile-cta">Book a free call</a>
 
-
-  <!-- Mobile toggle (CSS only) 
-  <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="hamburger">☰</label>
-  -->
 </nav>
 
 <!-- HERO -->
@@ -214,6 +215,20 @@ async function renderBlogPreview(id, limit){
  });
 }
 <!-- renderBlogPreview("blog-preview",3); -->
+</script>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navItems = document.querySelectorAll('.nav-links a');
+
+  menuToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+  });
+
+  navItems.forEach(item => {
+    item.addEventListener('click', () => {
+      document.body.classList.remove('nav-open');
+    });
+  });
 </script>
 </body>
 </html>
